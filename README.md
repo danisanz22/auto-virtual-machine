@@ -1,5 +1,5 @@
 # auto-virtual-machine
-Project to create between 1 to 5 virtual machines using images .qcow2 by running a script in Python
+Project to create between 1 to 5 virtual machines using images .qcow2 and .xml by running a script in Python
 ## Intructions
 ```
 git clone https://github.com/danisanz22/auto-virtual-machine.git
