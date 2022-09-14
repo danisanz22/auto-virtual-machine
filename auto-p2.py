@@ -34,12 +34,9 @@ if orden == 'prepare':
 		i = 1
 		while i <= int(aux):
 			call(['qemu-img', 'create', '-f', 'qcow2', '-b', 'cdps-vm-base-pc1.qcow2', 's'+str(i)+'.qcow2'])
-			#call(['cp','plantilla-vm-pc1.xml', 's'+str(i)+'.xml' ])
 			i = i+1
 		call(['qemu-img', 'create', '-f', 'qcow2', '-b', 'cdps-vm-base-pc1.qcow2', 'lb.qcow2'])
 		call(['qemu-img', 'create', '-f', 'qcow2', '-b', 'cdps-vm-base-pc1.qcow2', 'c1.qcow2'])
-		#call(['cp','plantilla-vm-pc1.xml', 'lb.xml' ])
-		#call(['cp','plantilla-vm-pc1.xml', 'c1.xml' ])
 
 		#cambiamos archivos xml
 		def pause(): 
@@ -76,8 +73,7 @@ if orden == 'prepare':
 			print(source_bridge.get("bridge"))
 			pause()
 			
-			#call(['mv','s'+str(n)+'.xml','tree'])
-			#print(etree.tounicode(tree, pretty_print=True))
+
 			f = open('s'+str(n)+'.xml', 'w')
 			f.write(etree.tounicode(tree, pretty_print=True))
 			f.close()
