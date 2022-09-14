@@ -6,7 +6,7 @@ git clone https://github.com/danisanz22/auto-virtual-machine.git
 cd auto-virtual-machine
 python3 auto-p2.py prepare "Number of virtual machines"
 ```
-If you do not insert any number, the project will create automatically 3 virtual machines. You must insert a number between 1 to 5.
+You must insert a number between 1 to 5. If you do not insert any number, the project will create automatically 3 virtual machines.
 
 To run the servers
 ```
