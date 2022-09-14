@@ -20,5 +20,5 @@ If you want to restart the servers repeat the command of launching.
 
 To release the servers
 ```
-python3 auto-p2-py
+python3 auto-p2-py release
 ```
