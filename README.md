@@ -7,16 +7,17 @@ cd auto-virtual-machine
 python3 auto-p2.py prepare "Number of virtual machines"
 ```
 If you do not insert any number, the project will create automatically 3 virtual machines. You must insert a number between 1 to 5.
-To run the servers
+
+###To run the servers
 ```
 python3 auto-p2.py launch
 ```
-To stop the servers
+###To stop the servers
 ```
 python3 auto-p2.py stop
 ```
 If you want to restart the servers repeat the command of launching.
-To release the servers
+###To release the servers
 ```
 python3 auto-p2-py
-
+```
